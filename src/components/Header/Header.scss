@@ -1,0 +1,107 @@
+@import '../../variables';
+    
+header{
+    font-family:$main-font;
+    left: 0;
+    right: 0;
+    position: absolute;
+    z-index: 1;
+    padding: 50px 110px 0 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .logo {
+        padding: 2px 0 0 0;
+        display: flex;
+        align-items: center;
+        
+    }
+    
+    .top-buttons {
+        display: flex;
+    }
+    #top{
+        padding: 50px 110px 0 110px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+.register {
+    display: flex;
+    align-items: center;
+    padding: 2px 0 0 0;
+}
+nav{
+display: flex;
+align-items: center;
+gap: 54px;
+}
+.nav-link{
+font-size: 20px;
+font-weight: 600;
+line-height: 30px;
+letter-spacing: 0em;
+text-align: left;
+text-decoration:none;
+color:  #777A73;
+}
+#nav-home {
+    color: #588535;
+}
+.gap
+{
+padding-left: 3px; 
+}
+.mob-icon{
+    background-color:transparent;
+    border: none;
+    padding: 0;
+}
+.mob-pic{
+    margin:0;
+    width: 50px;
+}
+}
+    
+    @media (min-width:851px) {
+        .mobile-only {
+            display: none !important;
+        }
+    }
+    
+    @media (max-width:850px) {
+        .desktop-only {
+            display: none !important;
+        }
+        header{
+        #top {
+            padding: 50px 50px 0 50px;
+        }
+        nav {
+            transform: translateY(-200%);
+            transition: all 0.4s;
+            transform: translateY(0%);
+            flex-direction: column;
+            position: absolute;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            background-color: #F6F6F6;
+            justify-content: space-between;
+            right: 0px;
+            top: 110px;
+            padding: 55px 27px 55px 10px;
+            width: 100%;
+            a {
+                display: block;
+                align-items: end;
+            }
+        }
+     .nav-link{
+            font-size: 13px;
+            }
+}
+}
