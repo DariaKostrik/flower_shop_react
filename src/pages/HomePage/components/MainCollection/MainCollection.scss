@@ -1,0 +1,287 @@
+@import '../../../../variables';
+
+.main-collection {
+    padding-top: 120px;
+    padding-bottom: 123px;
+    background-color: #FFF;
+    color: #22271C;
+    font-weight: 500;
+    justify-content: center;
+
+    .img {
+        padding: 0 200px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        z-index: 1;
+    }
+
+    .table {
+        padding: 0 200px;
+    }
+
+    .grid-blocks {
+        display: grid;
+        grid-template-areas: "a b c" "a d e" "f g e";
+        justify-content: center;
+        gap: 30px;
+        grid-template-columns: (34% 33% 33%);
+        width: 100%;
+        padding: 0 15px;
+
+        .block {
+            background-color: rgba(246, 246, 246, 1);
+
+            img {
+                display: block;
+                left: 0;
+                right: 0;
+                position: absolute;
+                bottom: 3.97%;
+                max-height: 84%;
+                width: auto;
+                margin-left: auto;            z-index: 0;
+                margin-right: auto;
+
+            }
+        }
+    }
+    
+    .base-cat {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        position: absolute;
+        bottom: 0px;
+        width: 100%;
+        border-radius: 0px 0px 10px 10px;
+        background-color: rgba(255, 255, 255, 0.50);
+        backdrop-filter: blur(25px);
+        
+        #main {
+            padding-left: 30px;
+            color: #22271C;
+            font-size: 20px;
+        }
+        
+        #additional {
+            color: #588535;
+            font-size: 16px;
+            padding-right: 30px;
+        }
+        
+        span {
+            display: block;
+        }
+    }
+    
+    .base {
+        display: flex;
+        flex-direction: column;
+        background-color: #FFF;
+        
+        #p1 {
+            margin-top: 123px;
+            justify-content: center;
+            display: flex;
+            font-size: 40px;
+            font-weight: 700;
+        }
+        
+        #p2 {
+            display: flex;
+            justify-content: center;
+            color: #777A73;
+            font-size: 16px;
+            font-weight: 400;
+            margin-bottom: 50px;
+            
+            br {
+                display: none;
+            }
+        }
+    }
+    
+    #fon {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        position: relative;
+        
+    }
+    
+    #bl {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    #text-on-fon {
+        padding: 100px 200px 100px 200px;
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+    }
+    
+    .plant-care {
+        background-color: #F6F6F6;
+        height: 504px;
+        position: relative;
+        
+        .info-card {
+            display: flex;
+            justify-content: space-around;
+            position: absolute;
+            padding-top: 224px;
+            padding-left: 10.42%;
+            padding-right: 10.42%;
+            z-index: 3;
+            width: 100%;
+            gap: 30px;
+            
+            #card {
+                width: 487px;
+                height: 160px;
+                border-radius: 10px;
+                background-color: #FFF;
+                box-shadow: 5px 10px 30px 0px rgba(22, 0, 86, 0.06);
+            }
+        }
+    }
+    
+    .a {
+        grid-area: a;
+        position: relative;
+        padding-top: 152.11%;
+        width: 100%;
+    }
+    
+    .b {
+        grid-area: b;
+        position: relative;
+        
+    }
+    
+    .c {
+        grid-area: c;
+        position: relative;
+        
+    }
+    
+    .d {
+        grid-area: d;
+        position: relative;
+    }
+    
+    .e {
+        grid-area: e;
+        position: relative;
+        padding-top: 157.17%;
+        width: 100%;
+    }
+    
+    .f {
+        grid-area: f;
+        position: relative;
+        
+    }
+    
+    .g {
+        grid-area: g;
+        position: relative;
+    }
+    .view-all-button {
+        display: flex;
+        width: 182px;
+        height: 60px;
+        color: #588535;
+        font-size: 20px;
+        font-weight: 500;
+        border-radius: 8px 0 8px 0;
+        border-color: #588535;
+        background-color: #FFF;
+        border-width: 3px;
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 50px;
+    }
+}
+
+@media (min-width:851px) {
+    .mobile-only {
+        display: none !important;
+    }
+}
+@media (max-width:850px) {
+    .desktop-only {
+        display: none !important;
+    }
+
+    .main-collection {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        
+        .base {
+            flex-direction: column;
+            
+            #p1 {
+                margin-top: 30px;
+                font-size: 15px;
+            }
+            
+            #p2 {
+                font-size: 12px;
+                margin-bottom: 20px;
+                
+                br {
+                    display: none;
+                }
+            }
+            
+            .img {
+                padding: 0 10px;
+                top: 3%;
+                bottom: 0;
+            }
+            
+            .table {
+                padding: 0 15px;
+            }
+            
+            .grid-blocks {
+                gap: 5px;
+                padding: 0 10px;
+                
+            }
+        }
+        
+        .base-cat {
+            height: 30px;
+        backdrop-filter: blur(25px);
+        
+        #main {
+            padding-left: 5px;
+            font-size: 10px;
+        }
+        
+        #additional {
+            font-size: 6px;
+            padding-right: 5px;
+        }
+    }
+    
+    .view-all-button {
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+        border-radius: 3px 0 3px 0;
+        border-width: 1px;
+        margin-top: 20px;
+    }
+}
+    
+}
