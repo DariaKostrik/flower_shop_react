@@ -135,6 +135,32 @@
     margin-bottom: -3px;
 }
 
+.base {
+    display: flex;
+    flex-direction: column;
+    background-color: #FFF;
+
+    #p1 {
+        margin-top: 123px;
+        justify-content: center;
+        display: flex;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    #p2 {
+        display: flex;
+        justify-content: center;
+        color: #777A73;
+        font-size: 16px;
+        font-weight: 400;
+        margin-bottom: 50px;
+
+        br {
+            display: none;
+        }
+    }
+}
 
 @media (max-width:850px) {
     .desktop-only {
