@@ -1,0 +1,212 @@
+@import '../../../../variables';
+
+.container-for-plant-in-line {
+    display: flex;
+    gap:30px;
+    & :first-child{
+    }
+}
+
+#container-with-goods {
+    margin: 129px 70px 100px 110px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    position: relative;
+    overflow: hidden;
+    .container-for-plant-in-line {
+        height: 280px;
+        .plant-in-line {
+            transition: all 0.5s 0.3s;
+            width: 400px;
+            height: 200px;
+            border-radius: 18px;
+            background: #FFF;
+            display: flex;
+            align-self: flex-end;
+            flex-shrink: 0;
+            
+            
+            .image-inline-box {
+                align-self: center;
+            width: 37%;
+
+            .plant-photo {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        .basic-inf {
+            width: 63%;
+            .like {
+                position: relative;
+                right: 20px;
+                top: 20px;
+                
+                .heart {
+                    display: block;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                }
+                
+                .heart-green {
+                    display: none;
+                }
+                
+                .heart-white {
+                    display: none;
+                }
+            }
+            
+            .like:active {
+                .heart {
+                    display: none;
+                }
+                
+                .heart-green {
+                    display: block;
+                    position: absolute;
+                    right: 20px;
+                    top: 20px;
+                }
+                
+                .heart-white {
+                    display: none;
+                }
+
+            }
+            
+            #name-of-flo {
+                padding: 40px 0 10px 0;
+                color: #22271C;
+                font-family: $main-font;
+                font-size: 20px;
+                font-weight: 600;
+            }
+            
+            .inf-about-flo {
+                color: #777A73;
+                font-family: $main-font;
+                font-size: 16px;
+                font-weight: 400;
+            }
+            
+            .price {
+                color: #22271C;
+                font-family: $main-font;
+                font-size: 20px;
+                font-weight: 700;
+            }
+        }
+
+        #button {
+            width: 130px;
+            height: 40px;
+            border-radius: 5px;
+            background-color: #FBFDFE;
+            color: #588535;
+            font-family: $main-font;
+            font-size: 14px;
+            font-weight: 400;
+            border-color: #588535;
+            display: none;
+        }
+    }
+    }
+    
+    .plant-in-line:hover {
+        height: 280px;
+        background: #588535;
+        transition-delay: 0.1s;
+
+        .basic-inf {
+            position: relative;
+            right: 20px;
+            left:3px;
+            top: 20px;
+
+            .like {
+                .heart {
+                    display: block;
+                    position: absolute;
+                    right: 17px;
+                    top: 17px;
+                    z-index: 6;
+                }
+
+                .heart-green {
+                    display: none;
+                }
+                .heart-white {
+                    display: none;
+                }
+            }
+
+            .like:active {
+                color: #F6F6F6;
+
+                .heart-white {
+                    display: block;
+                    position: absolute;
+                    right: 17px;
+                    top: 17px;
+                    z-index: 6;
+                }
+                .heart {
+                    display: none;
+                }
+                .heart-green {
+                    display: none;
+                }
+            }
+
+            #name-of-flo {
+                color: #FFF;
+                font-family: $main-font;
+                font-size: 24px;
+                font-weight: 700;
+                padding: 40px 0 10px 0;
+            }
+
+            .inf-about-flo {
+                color: rgba(255, 255, 255, 0.60);
+                font-family: $main-font;
+                font-size: 20px;
+                font-weight: 400;
+            }
+
+            .price {
+                color: #FFF;
+                font-family: $main-font;
+                font-size: 24px;
+                font-weight: 700;
+            }
+        }
+
+        #button {
+            display: block;
+            margin-top: 0;
+            margin-bottom: 0;
+        }
+    }
+    
+    .arrow{
+        position: absolute;
+        z-index: 2;
+        display: block;
+        border: none;
+        background-color: transparent;
+        align-self: center;
+        &.right{
+            right: -60px;
+        }
+        
+        &.left {
+            left: -45px;
+        }
+    }
+   
+}
