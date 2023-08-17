@@ -1,0 +1,211 @@
+@import '../../../../variables';
+
+
+.future-goods {
+    background-color: #FFF;
+}
+
+.view-all-button {
+    display: flex;
+    width: 182px;
+    height: 60px;
+    color: #588535;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 8px 0 8px 0;
+    border-color: #588535;
+    background-color: #FFF;
+    border-width: 3px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 50px;
+}
+
+#container-with-future-goods {
+    background-color: #FFF;
+    margin: 129px 0 100px 0;
+    padding-left: 110px;
+    padding-right: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+
+    .fut-plant-in-line:hover {
+        border-color: #588535;
+
+        .nested-field {
+            background-color: #588535;
+
+            .price {
+                color: #FFF;
+            }
+        }
+
+        .button-cart {
+            fill: #FFF;
+            stroke-width: 1px;
+            stroke: #6C944E;
+            background-color: #E5E5E5;
+        }
+
+        .flower-name {
+            color: #FFF;
+        }
+    }
+
+    .fut-plant-in-line {
+        display: flex;
+        flex-wrap: wrap;
+        width: 357.5px;
+        height: 459px;
+        border-radius: 10px;
+        border: 1px solid rgba(88, 133, 53, 0.1);
+        background-color: #FFF;
+        max-width: 100%;
+        max-height: 100%;
+
+        #plants {
+            margin-top: 44px;
+            margin-bottom: 45px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .nested-field {
+            display: grid;
+            grid-template-columns: (1fr 1fr);
+            justify-content: flex-end;
+            align-content: space-between;
+            padding: 30px;
+            height: 160px;
+            width: 100%;
+            border: 1px solid rgba(125, 158, 100, 0.1);
+            background-color: #E5E5E5;
+            border-radius: 0px 0px 10px 10px;
+
+            .price {
+                color: #22271C;
+                text-align: right;
+                font-family: $main-font;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 30px;
+            }
+
+            .stars {
+                display: flex;
+                right: 0;
+                width: 100%;
+                align-items: center;
+                justify-content: flex-end;
+            }
+        }
+
+        .button-cart {
+            color: #588535;
+            border-color: #588535;
+            text-align: center;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 30px;
+            border-radius: 5px 0 5px 0;
+            width: 130px;
+            height: 40px;
+        }
+
+        .flower-name {
+            color: #22271C;
+            font-family: $main-font;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+        }
+    }
+}
+
+#dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    margin-bottom: -3px;
+}
+
+
+@media (max-width:850px) {
+    .desktop-only {
+        display: none !important;
+    }
+#container-with-future-goods {
+    margin: 30px 0 20px 0;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: center;
+    gap: 10px;
+
+    .fut-plant-in-line {
+        width: 90px;
+        height: 115px;
+        flex-wrap: nowrap;
+        flex-direction: column;
+
+        #plants {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 5%;
+            margin-bottom: auto;
+            width: 30%;
+            height: auto;
+
+        }
+
+        .nested-field {
+            padding: 7px;
+            height: 50px;
+            width: 100%;
+            border-radius: 0px 0px 3px 3px;
+            align-content: center;
+            justify-content: center;
+            grid-template-columns: 1fr;
+
+            .price {
+                font-size: 7px;
+                text-align: center;
+                line-height: normal;
+            }
+
+            .stars {
+                display: none;
+            }
+        }
+
+        .button-cart {
+            font-size: 7px;
+            width: 70px;
+            height: 15px;
+            line-height: normal;
+            text-align: center;
+            border-width: 1px;
+
+        }
+
+        .flower-name {
+            font-size: 7px;
+            text-align: center;
+        }
+    }
+}
+
+#dots {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    width: 10%;
+    height: auto;
+}
+}

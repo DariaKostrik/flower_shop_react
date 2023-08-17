@@ -1,0 +1,44 @@
+
+body {
+    position: relative;
+    background: #F6F6F6;
+
+    // .plant-care {
+    //     background-color: #F6F6F6;
+    //     height: 504px;
+    //     position: relative;
+    //     z-index: -1;
+    // }
+    
+    #fon {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        position: relative;
+    }
+    
+    #bl {
+        position: absolute;
+        width: 100%;
+        z-index: 2;
+    }
+    
+    #text-on-fon {
+        padding: 100px 200px 100px 200px;
+        position: absolute;
+        width: 100%;
+        z-index: 3;
+    }
+}
+    @media (min-width:851px) {
+        .mobile-only {
+            display: none !important;
+        }
+    }
+    
+    @media (max-width:850px) {
+        .desktop-only {
+            display: none !important;
+        }
+}
